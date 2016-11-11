@@ -1,10 +1,12 @@
 
 // #1 Create a variable called hello and assign it the string 'goodbye'
-
+var hello = "goodbye";
 
 
 // #2 Use the variable iLove to create a new variable called iLoveCode that is assigned the string "I love code"
-var iLove = 'I love';
+var iLove = 'I love';{
+	var iLoveCode = "I love code"
+}
 
 // #3  Make an object called bob and give it the following properties
 // bob has a height of 6ft (string)
@@ -12,6 +14,18 @@ var iLove = 'I love';
 // bob has hair, that has style spikey, and color brown (object)
 // bob is not presidentOfTheUnitedStates (boolean)
 // bob likes apples, bananas, and cherries (array of strings)
+var bob = {
+	height: "6ft",
+	age: 24,
+	var hair = {
+		style: "spikey",
+		color: "brown"
+	}
+function presidentOfTheUnitedStates(){
+ console.log(false)
+}
+likes: ["apples", "bananas", "cherries"];
+}
 
 
 // #4 Change my shirt color to pink using dot notation
@@ -19,17 +33,21 @@ var myShirt = {
 	type: 'polo',
 	color: 'red'
 };
-
+myShirt.color="pink";
 // Change my shirt type to spandex using square bracket notation
 var myOtherShirt = {
 	type: 'polo',
 	color: 'red'
 };
-
+myOtherShirt["type"]= "spandex";
 // #5 Create an object that tracks a count of animals in a zoo.  Call it 'zoo'
 // The key should be the animal name(string) and the value should be how many there are.
 // Our zoo has 8 monkeys, 4 giraffes and 2 elephants
-
+var zoo = {
+	monkeys: 8,
+	giraffes: 4,
+	elephants: 2
+}
 
 // #6 Loop through this object and change all keys that start with the letter s to have a value of 's'
 
@@ -39,31 +57,43 @@ var snake = {
 	says: 'ssss',
 	smells: 'heat',
 	runs: 'legless'
+
+	for (var i = 0; i < 5; i++);
+	for(let [0] in i) = "s"
 };
 
 //#7 Create an array of strings that are the 7 primary colors in the rainbow - red, orange, yellow, green, blue, indigo, violet (lower-case). Call your array rainbowColors
-
+var rainbowColors = ["red",'orange', 'yellow', 'green', 'blue', 'indigo', 'violet'];
 // #8 Using this array do the following
-var heroes = ['superman', 'batman', 'flash'];
+var heroes = ['superman', 'batman', 'flash'];{
 // add 'wonderwoman' to the end
-
+heroes.push('wonderwoman');
 // remove 'superman' and store him in a variable called firstHero
-
+console.log( heroes.shift() );
+var firstHero = 'superman';
 // add 'spongebob' to the start of the array
-
+heroes.unshift('spongebob');
 // remove 'flash' from the array and store him in a variable called secondHero
-
+heroes.pop('flash');
+var secondHero = 'flash';
 // leave batman in the array but put a copy of him on a variable called thirdHero
-
-
+heroes.bind('batman') = var thirdHero;
+}
 
 
 // #9 Write a function called addItem that takes in an array, an item, and adds the item to
 // the array.
-
+var addItem = function(array, item) {
+		 for (var i = array.length - 1; i >=0; i--) {
+				array[i +1] = array[i];
+		 }
+		 array[0] = item;
+};
 
 // #10 Write a function called removeItem that takes in an array of strings, and a string.
-
+function removeItem(array)
+var index = array.indexOf(["1", "2", "3"]);
+array.splice(index, 1);
 // Removes all instances of that string from the array. And return the modified array.
 // The order of the array should not be changed
 
@@ -94,4 +124,3 @@ var heroes = ['superman', 'batman', 'flash'];
 
 // #16 Create a function called callerBack that takes in a function (holla) and a string parameter(back) and invokes it(holla) with the argument string(back) + ' back'."
 // example - If I call you with 'Give it' you should invoke holla with 'Give it back'
-
